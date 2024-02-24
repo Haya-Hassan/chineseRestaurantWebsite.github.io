@@ -1,0 +1,199 @@
+/*styles*/
+
+body {
+	font-size: 16px;
+	font-family: "Oxygen", sans-serif;
+	color: white;
+	background-color: #eed4c0;
+	
+}
+
+/*NAVBAR STYLE*/
+#header-nav{
+	background-color:#2E1A0B ;
+	border-radius:0;
+	border:0;
+	font-size: 20px;
+}
+
+.navbar-brand{
+	font-family: "Playpen Sans", cursive;
+	font-size:33px;
+	text-align: center;
+	color:#ba2641;
+	/*#ba2943;*/
+	
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 1px white;
+
+}
+
+#nav-list a {
+margin-top: -7px;
+}/*END OF NAVBAR*/
+
+/*PHONE STYLE*/
+#phone{
+	font-size:1.2em;
+	margin-top: -5px;
+}
+
+#phone-out{
+	margin:10px;
+    border-radius:50%;	
+}
+
+#phone-out-link{
+font-size:5vw;
+font-weight: bold;
+}/*END OF PHONE STYLE*/
+
+#interior-image{
+		border:2px solid #3F0C1F;
+		margin-top:20px;
+		margin-bottom:10px;
+		border-radius:50%;
+}
+
+/* START OF TILES*/
+#menu-tile, #specials-tile, #map-tile{
+	height:300px;
+	width:100%;
+	margin-bottom:10px;
+	margin-top:10px;
+	position:relative;
+	border:2px solid #ba2641;
+	border-radius:3%;
+	overflow:hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+	box-shadow:0 1px 5px 1px #cccccc;
+}
+
+
+#menu-tile{
+	background: url('images/chinesefood1.jpg') no-repeat;
+	background-size:cover;
+	background-position: center;
+	transition: background-image 2s;
+	}
+
+
+
+#specials-tile{
+	background: url('images/specials2.jpg') no-repeat;
+	background-size:cover;
+	background-position: right;
+
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+	position:absolute;
+	font-size:2.5em;
+	bottom:0;
+	left:0;
+	text-transform:lowercase;
+	font-weight: bold;
+	text-shadow:1px 1px 2px black;
+	padding:5px;
+	margin-left:7px;
+	color:white;
+	/*#c0c8ca;*/
+}
+
+#map-tile span{
+	text-shadow:3px 1px 4px black;
+}/*END OF TILES*/
+
+
+/*START OF FOOTER*/
+.panel-footer{
+	margin-top: 10px;
+	padding: 30px;
+	background-color: #55585e;
+	border-radius:3% 3% 0 0;
+
+}
+
+.panel-footer div.row{
+	margin-bottom:35px;
+
+}
+
+#hours > span, #address > span{
+	font-size: 1.3em;
+}
+
+#hours, #address{
+	line-height:1.5;
+}
+
+#testimonials{
+	font-style:italic;
+	padding-top:25px;
+	font-size:1.12em;
+}
+
+#copyright{
+	text-align:center;
+	font-size:0.8em;
+
+}
+/*END OF FOOTER*/
+
+
+
+
+/***********MEDIA QUERY************/
+/*large and lx-arge devices only*/
+@media (min-width:992px){
+	#interior-image img{
+		height:575px;
+		width:100%;
+		padding:0;
+		object-fit:cover;
+
+    }	
+}
+
+/*medium devices only*/
+@media (min-width:768px) and (max-width:991px){
+      #interior-image img{
+		height:500px;
+		width:100%;
+		padding:0;
+		object-fit:cover;
+		
+	}
+
+	#menu-tile span, #specials-tile span, #map-tile span{
+	   font-size:2.2em;
+    }
+}
+
+
+/*Extra small and small devices*/
+@media (max-width:767px) {
+
+	.navbar-brand{
+		font-size: 5.5vw;  /*1vw = 1% of viewport width*/
+	}
+
+	#interior-image {
+		margin:10px 1px;
+		}	
+
+	#menu-tile span, #specials-tile span, #map-tile span{
+	   font-size:2em;
+    }
+
+    #testimonials{
+    	padding-top:5px;
+    }
+}
+
+
+/*color schemes: 
+1) #F0C0CB  #BD2448 #C95136 #E26C12 #2E1A0B;
